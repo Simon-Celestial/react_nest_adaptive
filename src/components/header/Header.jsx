@@ -16,7 +16,10 @@ import voucherImg from "../../assets/images/voucher.png";
 import settingsImg from "../../assets/images/setting.png";
 import closeImg from "../../assets/images/close.png";
 import peppersImg from "../../assets/images/colored-peppers.jpg";
-import bagImg from "../../assets/images/mango-juice.jpg";
+import bagImg from "../../assets/images/daicy-bag.jpg";
+import categoryImg from "../../assets/images/categories.png";
+import greenFire from "../../assets/images/green-fire.svg";
+import headphonesImg from "../../assets/images/headphone.svg";
 
 
 const Header = () => {
@@ -106,25 +109,32 @@ const Header = () => {
                         <p>Wishlist</p>
                         <div className="green-circle">6</div>
                     </div>
-                    <div className="action-item action-green-circle cart-drowdown-activation">
+                    <div className="action-item action-green-circle cart-dropdown-activation">
                         <div className="cart-dropdown-container">
                            <div className="goods-container">
                                <img src={bagImg} alt="daisy-bag"/>
                                <div className="goods-title">
                                    <p>Daisy Casual Bag</p>
-                                   <p>1 x $800.00</p>
+                                   <p>1 x $200.00</p>
                                    <img src={closeImg} alt="close-mark" className="close-mark"/>
                                </div>
                            </div>
                             <div className="goods-container">
-                                <img src={bagImg} alt="daisy-bag"/>
+                                <img src={peppersImg} alt="peppers"/>
                                 <div className="goods-title">
-                                    <p>Daisy Casual Bag</p>
-                                    <p>1 x $800.00</p>
-                                    {/*<img src={closeImg} alt="close-mark" className="close-mark"/>*/}
+                                    <p>Fresh Peppers</p>
+                                    <p>1 x $15.00</p>
+                                    <img src={closeImg} alt="close-mark" className="close-mark"/>
                                 </div>
                             </div>
-
+                            <div className="goods-price-block">
+                                <p>Total</p>
+                                <p>$215.00</p>
+                            </div>
+                            <div className="goods-buttons-block">
+                                <button>View cart</button>
+                                <button>Checkout</button>
+                            </div>
                         </div>
                         <img src={cartImg} alt="cart"/>
                         <p>Cart</p>
@@ -159,6 +169,59 @@ const Header = () => {
                                 <p>Sign Out</p>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div className="header-bottom-container">
+                <div className="navigation-container">
+                    <div className="nav-categories-button">
+                        <img src={categoryImg} alt="category"/>
+                        <a href="#">Browse All Categories</a>
+                        <img src={downArrow} alt="down-arrow"/>
+                    </div>
+                    <div className="navigation-items">
+                        <div className="navigation-item">
+                            <img src={greenFire} alt="fire-logo"/>
+                            <a href="#">Deals</a>
+                        </div>
+                        <div className="navigation-item">
+                            <a href="#">Home</a>
+                            <img src={downArrow} alt="down-arrow"/>
+                        </div>
+                        <div className="navigation-item">
+                            <a href="#">About</a>
+                        </div>
+                        <div className="navigation-item">
+                            <a href="#">Shop</a>
+                            <img src={downArrow} alt="down-arrow"/>
+                        </div>
+                        <div className="navigation-item">
+                            <a href="#">Vendors</a>
+                            <img src={downArrow} alt="down-arrow"/>
+                        </div>
+                        <div className="navigation-item">
+                            <a href="#">Mega Menu</a>
+                            <img src={downArrow} alt="down-arrow"/>
+                        </div>
+                        <div className="navigation-item">
+                            <a href="#">Blog</a>
+                            <img src={downArrow} alt="down-arrow"/>
+                        </div>
+
+                        <div className="navigation-item">
+                            <a href="#">Pages</a>
+                            <img src={downArrow} alt="down-arrow"/>
+                        </div>
+                        <div className="navigation-item">
+                            <a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div className="support-container">
+                    <img src={headphonesImg} alt="headphones"/>
+                    <div className="support-title">
+                        <p>1900 - 888</p>
+                        <span>24/7 Support Center</span>
                     </div>
                 </div>
             </div>
