@@ -1,0 +1,210 @@
+.header-wrapper {
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
+.header-top-container {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    border-bottom: 1px solid var(--gray-border);
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+.header-top-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.header-text-border {
+    border-right: 1px solid var(--gray-border);
+}
+
+.header-top-items > a {
+    font-size: 13px;
+    color: var(--gray-text-color);
+    padding: 0 10px;
+    font-family: Lato-regular, sans-serif;
+    transition: color 0.3s ease;
+}
+
+.header-top-items > a:hover {
+    color: black;
+}
+
+.header-marquee-block > marquee {
+    font-size: 13px;
+    font-family: Lato-bold, sans-serif;
+    font-weight: 400;
+    color: var(--gray-text-color);
+    opacity: 0.6;
+}
+
+.header-options-container {
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.header-options-container > p {
+    font-family: Lato-regular, sans-serif;
+    font-size: 13px;
+    color: var(--gray-text-color);
+}
+
+.header-text-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.header-text-arrow > p {
+    font-family: Lato-regular, sans-serif;
+    font-size: 13px;
+    color: var(--gray-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: relative;
+    height: 40px;
+}
+.header-text-arrow > p:hover .lang-dropdown {
+    display: flex;
+}
+.lang-dropdown {
+    flex-direction: column;
+    padding: 10px 20px;
+    position: absolute;
+    white-space: nowrap;
+    top: 39px;
+    left: -1px;
+    border: 1px solid var(--gray-border);
+    gap: 10px;
+    display: none;
+}
+.lang-dropdown > p {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.money-dropdown {
+    left: -11px!important;
+}
+
+.header-text-arrow > p:nth-child(1) {
+    border-left: 1px solid var(--gray-border);
+    border-right: 1px solid var(--gray-border);
+    padding: 0 10px;
+}
+
+.header-text-arrow > p > img {
+    width: 10px;
+    height: 10px;
+}
+
+.green-color-number {
+    color: var(--green-light-color)!important;
+}
+.header-middle-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 30px 150px;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-border);
+}
+.logo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo-box > img {
+    width: 180px;
+    height: 55px;
+}
+.header-search-box {
+    display: flex;
+    width: 600px;
+    height: 50px;
+    border: 2px solid rgba(59, 183, 126, 0.3);
+    border-radius: 5px;
+    padding: 0 20px;
+    gap: 10px;
+    align-items: center;
+}
+.header-search-box > form {
+    display: flex;
+    flex: 1;
+    height: auto;
+}
+.category-selection {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.category-selection > b {
+    font-size: 14px;
+    font-family: qicksand-bold,sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-right: 1px solid #c5c5c5;
+    padding-right: 15px;
+    cursor: pointer;
+}
+.category-selection > b > img {
+    width: 10px;
+    height: 10px;
+}
+#headerSearch {
+    flex: 1;
+    outline: 0;
+    border: 0;
+    padding-right: 10px;
+}
+.header-search-box > img {
+    width: 20px;
+    height: 20px;
+    opacity: 0.6;
+}
+.location-wrapper {
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid var(--gray-border);
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+}
+.location-wrapper > img {
+    width: 10px;
+    height: 10px;
+}
+.location-wrapper > img:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    opacity: 0.6;
+}
+.location-wrapper > p {
+    font-size: 14px;
+    color: var(--green-light-color);
+    font-family: qicksand-medium, sans-serif;
+}
+
