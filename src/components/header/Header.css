@@ -425,15 +425,17 @@
     display: flex;
     width: auto;
     height: auto;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     cursor: pointer;
+
 }
 
 .account-dropdown-content > p {
     font-size: 14px;
     color: #253D4E;
     transition: color 0.3s ease;
+    font-family: Lato-regular,sans-serif;
 }
 .account-dropdown-content > p:hover {
     color: var(--green-light-color);

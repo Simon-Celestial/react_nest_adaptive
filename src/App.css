@@ -1,7 +1,7 @@
 :root {
     --gray-border: #ececec;
     --gray-text-color: #7E7E7E;
-    --green-light-color: #3BB77E;
+    --green-light-color: rgb(59, 183, 126);
 }
 @font-face {
     font-family: "lato-light";
