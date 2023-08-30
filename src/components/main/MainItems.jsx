@@ -4,12 +4,25 @@ import {faHeart} from "@fortawesome/free-regular-svg-icons";
 import {faCartShopping, faEye, faShuffle} from "@fortawesome/free-solid-svg-icons";
 
 
-const MainItems = ({imgFront, imgBack, productName, ratingValue, productShop, discountedPrice, normalPrice}) => {
+const MainItems = ({
+                       imgFront,
+                       imgBack,
+                       productName,
+                       ratingValue,
+                       productShop,
+                       discountedPrice,
+                       normalPrice,
+                       color,
+                       badgeText
+                   }) => {
     return (
         <div className="product-img-block">
-            <div className="colored-mark">
-                Hot
-            </div>
+            {badgeText && (<div style={{
+                background: color || 'unset',
+            }}
+                                className="colored-mark">
+                {badgeText}
+            </div>)}
             <div className="img-container">
                 <div className="img-container-buttons">
                     <div className="icon-wrapper">

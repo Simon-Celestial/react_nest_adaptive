@@ -20,6 +20,7 @@ import bagImg from "../../assets/images/daicy-bag.jpg";
 import categoryImg from "../../assets/images/categories.png";
 import greenFire from "../../assets/images/green-fire.svg";
 import headphonesImg from "../../assets/images/headphone.svg";
+import menuImg from "../../assets/images/menu.png";
 
 
 const Header = () => {
@@ -75,13 +76,12 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <div className="header-middle-container">
                 <div className="logo-box">
                     <img src={nestLogo} alt="site-logo"/>
                 </div>
+                <img className="menu" src={menuImg} alt="menu"/>
                 <div className="header-search-box">
                     <div className="category-selection">
                         <b>All Categories
@@ -89,14 +89,14 @@ const Header = () => {
                         </b>
                     </div>
                     <form action="#">
-                    <input type="text" id="headerSearch" placeholder="Search for items..."/>
+                        <input type="text" id="headerSearch" placeholder="Search for items..."/>
                     </form>
                     <img src={searchImg} alt="search"/>
                 </div>
                 <div className="location-wrapper">
-                        <img src={locationImg} alt="location"/>
-                        <p>Your Location</p>
-                        <img src={downArrow} alt="down-arrow"/>
+                    <img src={locationImg} alt="location"/>
+                    <p>Your Location</p>
+                    <img src={downArrow} alt="down-arrow"/>
                 </div>
                 <div className="header-actions-wrapper">
                     <div className="action-item action-green-circle">
@@ -111,14 +111,14 @@ const Header = () => {
                     </div>
                     <div className="action-item action-green-circle cart-dropdown-activation">
                         <div className="cart-dropdown-container">
-                           <div className="goods-container">
-                               <img src={bagImg} alt="daisy-bag"/>
-                               <div className="goods-title">
-                                   <p>Daisy Casual Bag</p>
-                                   <p>1 x $200.00</p>
-                                   <img src={closeImg} alt="close-mark" className="close-mark"/>
-                               </div>
-                           </div>
+                            <div className="goods-container">
+                                <img src={bagImg} alt="daisy-bag"/>
+                                <div className="goods-title">
+                                    <p>Daisy Casual Bag</p>
+                                    <p>1 x $200.00</p>
+                                    <img src={closeImg} alt="close-mark" className="close-mark"/>
+                                </div>
+                            </div>
                             <div className="goods-container">
                                 <img src={peppersImg} alt="peppers"/>
                                 <div className="goods-title">
@@ -144,10 +144,10 @@ const Header = () => {
                         <img src={userImg} alt="user"/>
                         <p>Account</p>
                         <div className="account-dropdown-item">
-                         <div className="account-dropdown-content">
-                             <img src={userImg} alt="account"/>
-                             <p>My Account</p>
-                         </div>
+                            <div className="account-dropdown-content">
+                                <img src={userImg} alt="account"/>
+                                <p>My Account</p>
+                            </div>
                             <div className="account-dropdown-content">
                                 <img src={locationImg} alt="orders-tracking"/>
                                 <p>Order Tracking</p>

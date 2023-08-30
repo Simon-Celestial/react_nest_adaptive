@@ -23,8 +23,6 @@ import tenProductFront from "../../assets/images/product-item-10-front.jpg"
 import tenProductBack from "../../assets/images/product-item-10-back.jpg"
 
 
-
-
 let mainImgBlockArray = [
     {
         imgFront: firstProductFront,
@@ -34,6 +32,8 @@ let mainImgBlockArray = [
         productShop: "NestFood",
         discountedPrice: "$28.85",
         normalPrice: "$32.80",
+        color: '#f74b81',
+        badgeText: 'Hot',
     },
     {
         imgFront: secondProductFront,
@@ -43,6 +43,8 @@ let mainImgBlockArray = [
         productShop: "Old El Paso",
         discountedPrice: "$23.85",
         normalPrice: "$25.8",
+        color: '#67bcee',
+        badgeText: 'Sale'
     },
     {
         imgFront: thirdProductFront,
@@ -52,6 +54,8 @@ let mainImgBlockArray = [
         productShop: "StarKist",
         discountedPrice: "$48.85",
         normalPrice: "$52.80",
+        color: '#3BB77E',
+        badgeText: 'New'
     },
     {
         imgFront: forthProductFront,
@@ -60,7 +64,7 @@ let mainImgBlockArray = [
         ratingValue: "(4.1)",
         productShop: "Bizim Market",
         discountedPrice: "$28.85",
-        normalPrice: "$32.80",
+        normalPrice: "$32.80"
     },
     {
         imgFront: fifthProductFront,
@@ -70,6 +74,9 @@ let mainImgBlockArray = [
         productShop: "NestFood",
         discountedPrice: "$17.85",
         normalPrice: "$19.80",
+        color: '#f59758',
+        badgeText: '-14%'
+
     },
     {
         imgFront: sixProductFront,
@@ -97,6 +104,9 @@ let mainImgBlockArray = [
         productShop: "NestFood",
         discountedPrice: "$18.85",
         normalPrice: "$22.80",
+        color: '#67bcee',
+        badgeText: 'Sale'
+
     },
     {
         imgFront: nineProductFront,
@@ -106,6 +116,8 @@ let mainImgBlockArray = [
         productShop: "Final",
         discountedPrice: "$48.85",
         normalPrice: "$39.75",
+        color: '#f74b81',
+        badgeText: 'Hot'
     },
     {
         imgFront: tenProductFront,
@@ -119,32 +131,32 @@ let mainImgBlockArray = [
 ];
 
 const Main = () => {
-return (
-    <main className="main-wrapper">
-        <div className="products-navigation">
-            <div className="products-title">
-                <h2>Popular Products</h2>
+    return (
+        <main className="main-wrapper">
+            <div className="products-navigation">
+                <div className="products-title">
+                    <h2>Popular Products</h2>
+                </div>
+                <div className="products-nav-items">
+                    <p>All</p>
+                    <p>Milks & Dairies</p>
+                    <p>Coffee & Teas</p>
+                    <p>Pet Foods</p>
+                    <p>Meats</p>
+                    <p>Vegetables</p>
+                    <p>Fruits</p>
+                </div>
             </div>
-            <div className="products-nav-items">
-                <p>All</p>
-                <p>Milks & Dairies</p>
-                <p>Coffee & Teas</p>
-                <p>Pet Foods</p>
-                <p>Meats</p>
-                <p>Vegetables</p>
-                <p>Fruits</p>
+            <div className="all-products-wrapper">
+                {mainImgBlockArray.map((item, i) => {
+                    return <MainItems
+                        key={i}
+                        {...item}
+                    />
+                })
+                }
             </div>
-        </div>
-        <div className="all-products-wrapper">
-            {mainImgBlockArray.map((item, i) => {
-                return <MainItems
-                    key={i}
-                    {...item}
-                />
-            })
-            }
-        </div>
-    </main>
-)
+        </main>
+    )
 }
 export default Main;
